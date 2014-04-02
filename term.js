@@ -17,6 +17,24 @@ function clear(){
 	output.innerHTML = "";
 }
 
+function changeAppearance(scheme){
+	console.log("TEST");
+	document.body.style.background = scheme.background;
+	var links = document.getElementsByTagName("a");
+    for(var i=0;i<links.length;i++)
+    {
+        if(links[i].href)
+        {
+            links[i].style.color = scheme.font;  
+        }
+    }
+    var pres = document.getElementsByTagName("pre");
+    for(var i=0;i<pres.length;i++)
+    {
+        pres[i].style.color = scheme.font;
+    }
+    input.style.color = scheme.font;
+}
 
 
 initTerminal();
@@ -56,6 +74,15 @@ function newCommand(event){
 				break;
 			case "whoami":
 				addLine("Hey visitor, my name is Malte and i am a tech enthusiast from Germany. You can visit my <a href=\"http://blog.malt3.de\">blog</a> to find out more about me.</br>");
+				break;
+			case "solarized":
+				changeAppearance(schemesArray[0]);
+				break;
+			case "white":
+				changeAppearance(schemesArray[1]);
+				break;
+			case "default":
+				changeAppearance(schemesArray[2]);
 				break;
 			case "secret":
 				random = Math.floor(Math.random() * secretArray.length);

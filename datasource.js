@@ -41,3 +41,9 @@ nyanArray[12] = "+      +     o        o      +    </br>";
 
 var secretArray = new Array();
 secretArray[0] = "There is a \"nyan\" command. I wonder what it will do...";
+secretArray[1] = "There are three different color schemes you can try out. They are called \"solarized\" \"white\" and \"default\"";
+
+var schemesArray = new Array();
+schemesArray[0] = { background: "#002b36", font: "#839496" };
+schemesArray[1] = { background: "white", font: "black" };
+schemesArray[2] = { background: "black", font: "green" };
