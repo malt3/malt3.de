@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>user@malt3.de</title>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="screen.css">
+  </head>
+  <body>
+    <div id="impressum"><a href="http://blog.malt3.de/impressum/">Impressum</a></div>
+    <div class="terminal" onClick="getFocus()">
+    	<div>
+    		<pre id="terminal-output"/>
+    	</div>
+    	<pre id="prompt">user@malt3.de > </pre><input id="input" type="text" onkeypress="newCommand(event)">
+    </div>
+    <script src="datasource.js"></script>
+    <script src="term.js"></script>
+  </body>
+</html>
