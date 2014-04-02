@@ -87,7 +87,7 @@ function newCommand(event){
 			case "secret":
 				random = Math.floor(Math.random() * secretArray.length);
 				console.log(random);
-				addLine(secretArray[random]);
+				addLine(secretArray[random]+"</br>");
 				break;
 			case "nyan":
 				for (var i = 0; i < nyanArray.length; i++) {
